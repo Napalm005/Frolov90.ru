@@ -1,0 +1,12 @@
+{
+  "name": "Frolov90.ru",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Сайт-портфолио",
+  "author": "Александр Фролов",
+  "dependencies": {
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
