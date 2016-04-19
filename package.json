@@ -1,12 +1,33 @@
 {
-  "name": "Frolov90.ru",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Сайт-портфолио",
-  "author": "Александр Фролов",
-  "dependencies": {
+  "name": "frolov90.ru",
+  "version": "1.0.0",
+  "description": "Site-portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "^5.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Napalm005/Frolov90.ru.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Napalm005/Frolov90.ru/issues"
+  },
+  "homepage": "https://github.com/Napalm005/Frolov90.ru#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
   }
 }
