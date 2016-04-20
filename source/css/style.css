@@ -1098,6 +1098,8 @@ p .phone
     bottom: -5px;
 }
 
+// Плагин lightGallery взят здесь http://www.jstoolbox.com/proekty/lightgallery/
+
 #LG_container{
     border: 1px solid #aaa;
     visibility:hidden;
@@ -1132,11 +1134,11 @@ p .phone
 }
 #LG_prevLink{
     left:0;
-    background:url(../img/prev.png) no-repeat left 40%
+    background:url(../img/prev.gif) no-repeat left 40%
 }
 #LG_nextLink{
     right:0;
-    background:url(../img/next.png) no-repeat right 40%
+    background:url(../img/next.gif) no-repeat right 40%
 }
 
 #LG_imgIndex{

@@ -78,7 +78,7 @@ gulp.task('html', function () {
 });
 
 gulp.task("start", ["style", "server"], function() {
-  gulp.watch("./source/less/**/*.css", ["style"]);
+  gulp.watch("./source/css/**/*.css", ["style"]);
   gulp.watch('./source/js/*.js', ['scripts']);
   gulp.watch("./source/*.html", ['html']);
 });
