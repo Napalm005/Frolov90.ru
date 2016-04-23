@@ -50,7 +50,7 @@ gulp.task('scripts', function() {
     .pipe(notify("script"));
 });
 
-gulp.task('compress', function() {
+gulp.task('imagemin', ['copy'], function() {
   gulp.src('./build/img/**/')
   .pipe(imagemin({
       progressive: true
@@ -87,10 +87,10 @@ gulp.task('build', function() {
   runSequence(
     'clean',
     'copy',
-    'compress',
     'style',
     'scripts',
-    'html'
+    'html',
+    'imagemin'
   );
 });
 
