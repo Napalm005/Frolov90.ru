@@ -1,0 +1,8 @@
+RewriteEngine Off
+
+AuthName "AWStats statistics"
+AuthType Basic
+AuthUserFile /home/virtwww/w_frolov90-ru_07266501/http/awstats/.htpasswd  
+Require valid-user
+
+DirectoryIndex index.cgi

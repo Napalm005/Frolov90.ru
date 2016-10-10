@@ -112,6 +112,7 @@ body
 
 .name
 {
+    visibility: hidden;
     font-size: 45px;
     font-weight: 500;
     line-height: 30px;
@@ -150,6 +151,10 @@ body
 
 .bio {
   min-height: 383px;
+}
+
+.bio p {
+  visibility: hidden;
 }
 
 h2
@@ -279,7 +284,7 @@ h3:before
 
 .certificate
 {
-    margin: 30px 0;
+    margin-left: -20px;
     padding: 0;
     text-align: center;
 }
@@ -289,8 +294,8 @@ h3:before
     display: inline-block;
     vertical-align: top;
 
-    margin: 0 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    margin-left: 40px;
 }
 
 .certificate img
@@ -583,6 +588,11 @@ h3:before
     background-image: url(../img/pixelplus-index-crop.jpg);
 }
 
+.ch-img-5
+{
+    background-image: url(../img/code-magic.jpg);
+}
+
 .flag:before
 {
     content: '';
@@ -686,7 +696,7 @@ h3:before
          -o-transform: rotate3d(0,1,0,180deg);
             transform: rotate3d(0,1,0,180deg);
 
-    background: #d2d2d2;
+    background: #eee;
 }
 
 .ch-item:hover .ch-info-wrap
@@ -769,7 +779,7 @@ h3:before
 .infographic
 {
     margin: 0;
-    margin-top: 140px;
+    margin-top: 200px;
     margin-bottom: -155px;
     padding: 0;
     list-style: none;
@@ -1154,13 +1164,6 @@ p .phone
     height:32px;
     line-height:32px;
 }
-#LG_titleBar{
-    color:#555;
-    height:30px;
-    line-height:36px;
-    overflow:hidden;
-    text-align:center;
-}
 #LG_overlay{
     position:absolute;
     top:0;
@@ -1311,4 +1314,70 @@ p .phone
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
 }

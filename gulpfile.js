@@ -89,8 +89,7 @@ gulp.task('build', function() {
     'copy',
     'style',
     'scripts',
-    'html',
-    'imagemin'
+    'html'
   );
 });
 
