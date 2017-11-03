@@ -419,35 +419,6 @@ h3:before
 }
 
 
-.download
-{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 44px;
-    display: inline-block;
-    min-width: 180px;
-    max-width: 200px;
-    margin: 0 auto;
-    padding: 7px 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    border-radius: 3px;
-    background-color: #fb565a;
-}
-
-.download:hover
-{
-    background-color: #d6494d;
-}
-
-.download:active
-{
-    background-color: #b63538;
-}
-
-
 
 .btn
 {
@@ -463,20 +434,6 @@ h3:before
     padding: 13px 15px;
     line-height: 18px;
 }
-
-.site-link
-{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-
-    display: block;
-
-    color: #0066CC;
-    margin-top: 10px;
-
-}
-
 .blue
 {
     border: 2px solid rgba(40, 171, 226, 0.5);
@@ -508,6 +465,57 @@ h3:before
     color: rgba(89, 194, 150, 1);
 }
 
+.btn--href
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    display: inline-block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 7px 15px;
+    padding-top: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fb565a;
+    border-radius: 3px;
+    border: 2px solid #fb565a;
+    transition-duration: 0.3s;
+    transition-property:background-color,color;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn--href:hover
+{
+    background-color: #fb565a;
+    color: #fff;
+}
+
+.btn--href:active
+{
+    background-color: #b63538;
+}
+
+.site-link
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+
+    display: block;
+
+    color: #0066CC;
+    margin-top: 10px;
+
+}
+
+
+
 
 .ch-info-back:hover .actions
 {
@@ -523,21 +531,22 @@ h3:before
 {
     font-size: 34px;
     font-weight: 500;
-    margin-top: 105px;
-    margin-bottom: 15px;
+    margin-top: 90px;
+    margin-bottom: 10px;
     text-align: center;
-    text-transform: uppercase;
+    line-height: 1.1;
 }
 
 .actions-text
 {
     font-weight: 300;
 
-    width: 150px;
+    width: 300px;
     margin: 15px auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     text-align: center;
+
 }
 
 .ch-grid:after,
@@ -566,29 +575,68 @@ h3:before
     vertical-align: top;
     width: 425px;
     height: 425px;
-    margin-bottom: 180px;
+    margin-bottom: 80px;
     margin-left: 60px;
 }
 
-.ch-img-1
+.ch-img-pink
 {
-    background-image: url(../img/pink-index-crop.jpg);
+  background-image: url(../img/pink-index-crop.jpg);
 }
-.ch-img-2
+.ch-img-rzdz
 {
-    background-image: url(../img/barbershop-index-crop.jpg);
+    background-image: url(../img/rzdz-index-crop.jpg);
 }
-.ch-img-3
+.ch-img-ananas
 {
-    background-image: url(../img/nerds-index-crop.jpg);
+    background-image: url(../img/ananas-index-crop.jpg);
+}
+.ch-img-pristinecleaning
+{
+    background-image: url(../img/pristinecleaning-index-crop.jpg);
+}
+.ch-img-torimed
+{
+    background-image: url(../img/torimed-index-crop.jpg);
+}
+.ch-img-krainova
+{
+    background-image: url(../img/krainova-index-crop.jpg);
+}
+.ch-img-uprbc
+{
+    background-image: url(../img/uprbc-index-crop.jpg);
+}
+.ch-img-samton
+{
+    background-image: url(../img/samton-index-crop.jpg);
+}
+.ch-img-autizm
+{
+    background-image: url(../img/autizm-index-crop.jpg);
+}
+.ch-img-autoinformator
+{
+    background-image: url(../img/autoinformator-index-crop.jpg);
+}
+.ch-img-guic
+{
+    background-image: url(../img/guic-index-crop.jpg);
+}
+.ch-img-second
+{
+    background-image: url(../img/second-index-crop.jpg);
+}
+.ch-img-rotondo
+{
+    background-image: url(../img/rotondo-index-crop.jpg);
+}
+.ch-img-bezb
+{
+    background-image: url(../img/bezb-index-crop.jpg);
 }
 
-.ch-img-4
-{
-    background-image: url(../img/pixelplus-index-crop.jpg);
-}
-
-.ch-img-5
+.ch-img-magic
 {
     background-image: url(../img/code-magic.jpg);
 }
@@ -598,8 +646,9 @@ h3:before
     content: '';
     position: absolute;
     background: url(../img/flag.jpg);
-    width: 30px;
-    height: 152px;
+    width: 20px;
+    height: 100px;
+    background-size: contain;
 }
 .ch-item
 {
@@ -610,7 +659,7 @@ h3:before
 
     cursor: default;
 
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: 0 1px 2px rgba(#fafafa,.1);
 
     -webkit-transition: all 0.4s ease-in-out;
        -moz-transition: all .4s ease-in-out;
@@ -675,7 +724,7 @@ h3:before
 
     display: block;
 
-    width: 100%;
+    width: 101%;
     height: 100%;
 
     background-position: center center;
@@ -696,7 +745,7 @@ h3:before
          -o-transform: rotate3d(0,1,0,180deg);
             transform: rotate3d(0,1,0,180deg);
 
-    background: #eee;
+    background: #fafafa;
 }
 
 .ch-item:hover .ch-info-wrap
@@ -808,7 +857,6 @@ h5
     margin-bottom: 5px;
 
     text-align: left;
-    margin-top: 80px;
 }
 
 .design
